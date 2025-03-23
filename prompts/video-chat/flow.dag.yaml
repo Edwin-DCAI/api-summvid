@@ -1,0 +1,89 @@
+environment_variables:
+  PF_DISABLE_TRACING: true
+inputs:
+  user_message:
+    type: string
+    default: What are the main benefits of React hooks?
+  video_id:
+    type: string
+    default: test_video_123
+  conversation_history:
+    type: list
+    default:
+    - role: user
+      content: Can you summarize what this video is about?
+    - role: assistant
+      content: The video is a comprehensive tutorial about React Hooks, focusing on
+        useState and useEffect. The instructor explains how hooks simplify state
+        management and side effects in functional components.
+  transcript:
+    type: string
+    default: Welcome to this tutorial on React Hooks. Today we'll explore how hooks
+      revolutionize the way we write React components. Let's start with
+      useState, which allows us to add state to functional components without
+      converting them to class components. Here's a simple example [shows code].
+      As you can see, useState gives us a cleaner way to manage component state.
+      Next, let's look at useEffect. This hook helps us handle side effects like
+      data fetching and subscriptions. One major advantage is that useEffect
+      combines componentDidMount, componentDidUpdate, and componentWillUnmount
+      into a single API. This means we can organize related logic together,
+      making our code more maintainable. Another benefit is that hooks encourage
+      code reuse through custom hooks. Let me demonstrate [shows example of
+      custom hook]. Finally, hooks lead to smaller bundle sizes because they
+      allow better dead code elimination compared to classes.
+  summary:
+    type: string
+    default: This video is a detailed tutorial explaining React Hooks, specifically
+      useState and useEffect. It covers the benefits of hooks over class
+      components, demonstrates practical examples, and discusses how hooks
+      improve code organization and reusability. The instructor shows live
+      coding examples and explains the concept of custom hooks.
+  insights:
+    type: string
+    default: Key points from the video:\n- useState allows state management in
+      functional components\n- useEffect combines lifecycle methods into a
+      single API\n- Hooks enable better code organization and reusability\n-
+      Custom hooks allow sharing stateful logic\n- Hooks can lead to smaller
+      bundle sizes\n- The video includes practical coding examples\n- The focus
+      is on useState and useEffect hooks
+outputs:
+  answer:
+    type: string
+    reference: ${llm_chat.output}
+  starters:
+    type: string
+    reference: ${llm_get_starters.output}
+nodes:
+- name: create_prompt
+  type: python
+  source:
+    type: code
+    path: create_prompt.py
+  inputs:
+    user_message: ${inputs.user_message}
+    conversation_history: ${inputs.conversation_history}
+    transcript: ${inputs.transcript}
+    summary: ${inputs.summary}
+    insights: ${inputs.insights}
+- name: llm_chat
+  type: llm
+  source:
+    type: code
+    path: llm_chat.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    messages: ${create_prompt.output}
+  connection: dcai-aoai-connection
+  api: chat
+- name: llm_get_starters
+  type: llm
+  source:
+    type: code
+    path: llm_get_starters.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    input: ${create_prompt.output}
+    response_format:
+      type: json_object
+  connection: dcai-aoai-connection
+  api: chat

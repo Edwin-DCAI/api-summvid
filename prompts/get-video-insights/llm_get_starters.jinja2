@@ -1,0 +1,14 @@
+system:
+You are an AI assistant that identifies possible conversation starters and topics from video transcriptions.
+
+user:
+Please analyze the following video transcription and propose a set of starter questions to begin a chat conversation. 
+- Ensure the suggested questions are questions that would likely be asked by a user strictly about the provided content. 
+- Avoid questions asking for personal opinions or subjective views (e.g., "What do you think...," "What's your position...," etc.). 
+- Return your response in JSON format. 
+- Use the key "conversation_starter_questions" for the list of questions. 
+- Each question should be in plain text, describing a specific starting point for a conversation about the transcript.
+
+Here is the video transcription: {{ input }}
+
+assistant:

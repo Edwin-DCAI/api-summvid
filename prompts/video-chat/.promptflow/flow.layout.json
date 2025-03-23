@@ -1,0 +1,30 @@
+{
+  "nodeLayouts": {
+    "inputs": {
+      "x": 455,
+      "y": 42,
+      "index": -1
+    },
+    "outputs": {
+      "x": 385,
+      "y": 444,
+      "index": -1
+    },
+    "create_prompt": {
+      "x": 305,
+      "y": 176,
+      "index": 0
+    },
+    "llm_chat": {
+      "x": 140,
+      "y": 310,
+      "index": 1
+    },
+    "llm_get_starters": {
+      "x": 470,
+      "y": 310,
+      "index": 2
+    }
+  },
+  "orientation": "Vertical"
+}

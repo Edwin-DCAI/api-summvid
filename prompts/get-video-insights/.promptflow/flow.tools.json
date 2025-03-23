@@ -1,0 +1,119 @@
+{
+  "package": {},
+  "code": {
+    "get_youtube_transcript.py": {
+      "type": "python",
+      "inputs": {
+        "youtube_id": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "get_youtube_transcript.py",
+      "function": "get_youtube_transcript"
+    },
+    "hello.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Please replace the template with your own prompt.",
+      "source": "hello.jinja2"
+    },
+    "aoai_service.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "aoai_service.jinja2"
+    },
+    "get_summary.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "get_summary.jinja2"
+    },
+    "llm_get_summary.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "llm_get_summary.jinja2"
+    },
+    "prep_summary.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "prep_summary.jinja2"
+    },
+    "llm_get_key_insights.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "llm_get_key_insights.jinja2"
+    },
+    "llm_get_insights.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "llm_get_insights.jinja2"
+    },
+    "llm_get_starters.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "llm_get_starters.jinja2"
+    },
+    "py_get_metadata.py": {
+      "type": "python",
+      "inputs": {
+        "youtube_id": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Retrieves basic metadata for the specified YouTube video using yt-dlp.\nReturns a dict with title, description, channel name, publish date, etc.",
+      "source": "py_get_metadata.py",
+      "function": "get_youtube_metadata"
+    }
+  }
+}

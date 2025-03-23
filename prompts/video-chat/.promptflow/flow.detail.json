@@ -1,0 +1,265 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_0",
+      "status": "Completed",
+      "error": null,
+      "inputs": {
+        "user_message": "What are the main benefits of React hooks?",
+        "video_id": "test_video_123",
+        "conversation_history": [
+          {
+            "role": "user",
+            "content": "Can you summarize what this video is about?"
+          },
+          {
+            "role": "assistant",
+            "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+          }
+        ],
+        "transcript": "Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.",
+        "summary": "This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.",
+        "insights": "Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks"
+      },
+      "output": {
+        "answer": "The main benefits of React Hooks discussed in the video are:\n\n- **State Management**: useState allows managing state in functional components without needing to convert them into class components.\n- **Lifecycle Management**: useEffect combines component lifecycle methods (componentDidMount, componentDidUpdate, and componentWillUnmount) into a single API, improving code organization.\n- **Code Organization and Reusability**: Hooks encourage better organization and allow for code reuse, particularly through custom hooks.\n- **Smaller Bundle Sizes**: Hooks can lead to smaller bundle sizes as they facilitate better dead code elimination compared to class components.",
+        "starters": "{\n    \"conversation_starter_questions\": [\n        \"Can you explain how useState works with functional components?\",\n        \"How does useEffect combine lifecycle methods into a single API?\",\n        \"What are custom hooks and how do they promote code reuse?\"\n    ]\n}"
+      },
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39",
+      "root_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39",
+      "source_run_id": null,
+      "flow_id": "default_flow_id",
+      "start_time": "2025-01-29T23:57:31.020156Z",
+      "end_time": "2025-01-29T23:57:34.060522Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "flow",
+          "node_name": "flow",
+          "type": "Flow",
+          "start_time": 1738159051.020156,
+          "end_time": 1738159054.060522,
+          "children": [],
+          "system_metrics": {
+            "duration": 3.040366,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0
+          },
+          "inputs": {
+            "user_message": "What are the main benefits of React hooks?",
+            "video_id": "test_video_123",
+            "conversation_history": [
+              {
+                "role": "user",
+                "content": "Can you summarize what this video is about?"
+              },
+              {
+                "role": "assistant",
+                "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+              }
+            ],
+            "transcript": "Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.",
+            "summary": "This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.",
+            "insights": "Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks"
+          },
+          "output": {
+            "answer": "The main benefits of React Hooks discussed in the video are:\n\n- **State Management**: useState allows managing state in functional components without needing to convert them into class components.\n- **Lifecycle Management**: useEffect combines component lifecycle methods (componentDidMount, componentDidUpdate, and componentWillUnmount) into a single API, improving code organization.\n- **Code Organization and Reusability**: Hooks encourage better organization and allow for code reuse, particularly through custom hooks.\n- **Smaller Bundle Sizes**: Hooks can lead to smaller bundle sizes as they facilitate better dead code elimination compared to class components.",
+            "starters": "{\n    \"conversation_starter_questions\": [\n        \"Can you explain how useState works with functional components?\",\n        \"How does useEffect combine lifecycle methods into a single API?\",\n        \"What are custom hooks and how do they promote code reuse?\"\n    ]\n}"
+          },
+          "error": null
+        }
+      ],
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "duration": 3.040366,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "result": {
+        "answer": "The main benefits of React Hooks discussed in the video are:\n\n- **State Management**: useState allows managing state in functional components without needing to convert them into class components.\n- **Lifecycle Management**: useEffect combines component lifecycle methods (componentDidMount, componentDidUpdate, and componentWillUnmount) into a single API, improving code organization.\n- **Code Organization and Reusability**: Hooks encourage better organization and allow for code reuse, particularly through custom hooks.\n- **Smaller Bundle Sizes**: Hooks can lead to smaller bundle sizes as they facilitate better dead code elimination compared to class components.",
+        "starters": "{\n    \"conversation_starter_questions\": [\n        \"Can you explain how useState works with functional components?\",\n        \"How does useEffect combine lifecycle methods into a single API?\",\n        \"What are custom hooks and how do they promote code reuse?\"\n    ]\n}"
+      },
+      "upload_metrics": false,
+      "otel_trace_id": null,
+      "message_format": "basic"
+    }
+  ],
+  "node_runs": [
+    {
+      "node": "create_prompt",
+      "flow_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39",
+      "run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_create_prompt_0",
+      "status": "Completed",
+      "inputs": {
+        "user_message": "What are the main benefits of React hooks?",
+        "conversation_history": [
+          {
+            "role": "user",
+            "content": "Can you summarize what this video is about?"
+          },
+          {
+            "role": "assistant",
+            "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+          }
+        ],
+        "transcript": "Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.",
+        "summary": "This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.",
+        "insights": "Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks"
+      },
+      "output": [
+        {
+          "role": "system",
+          "content": "You are an AI assistant helping users understand a video.\n        Here is the context about the video:\n\n        Transcript:\n        Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.\n\n        Summary:\n        This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.\n\n        Key Insights:\n        Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks\n\n        Answer questions based on this context. If asked about something not covered in the video, politely explain that you can only answer questions about the video's content."
+        },
+        {
+          "role": "user",
+          "content": "Can you summarize what this video is about?"
+        },
+        {
+          "role": "assistant",
+          "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+        },
+        {
+          "role": "user",
+          "content": "What are the main benefits of React hooks?"
+        }
+      ],
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_0",
+      "start_time": "2025-01-29T23:57:31.020737Z",
+      "end_time": "2025-01-29T23:57:31.020883Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 0.000146
+      },
+      "result": [
+        {
+          "role": "system",
+          "content": "You are an AI assistant helping users understand a video.\n        Here is the context about the video:\n\n        Transcript:\n        Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.\n\n        Summary:\n        This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.\n\n        Key Insights:\n        Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks\n\n        Answer questions based on this context. If asked about something not covered in the video, politely explain that you can only answer questions about the video's content."
+        },
+        {
+          "role": "user",
+          "content": "Can you summarize what this video is about?"
+        },
+        {
+          "role": "assistant",
+          "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+        },
+        {
+          "role": "user",
+          "content": "What are the main benefits of React hooks?"
+        }
+      ],
+      "message_format": "basic"
+    },
+    {
+      "node": "llm_chat",
+      "flow_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39",
+      "run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_llm_chat_0",
+      "status": "Completed",
+      "inputs": {
+        "deployment_name": "gpt-4o",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are an AI assistant helping users understand a video.\n        Here is the context about the video:\n\n        Transcript:\n        Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.\n\n        Summary:\n        This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.\n\n        Key Insights:\n        Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks\n\n        Answer questions based on this context. If asked about something not covered in the video, politely explain that you can only answer questions about the video's content."
+          },
+          {
+            "role": "user",
+            "content": "Can you summarize what this video is about?"
+          },
+          {
+            "role": "assistant",
+            "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+          },
+          {
+            "role": "user",
+            "content": "What are the main benefits of React hooks?"
+          }
+        ]
+      },
+      "output": "The main benefits of React Hooks discussed in the video are:\n\n- **State Management**: useState allows managing state in functional components without needing to convert them into class components.\n- **Lifecycle Management**: useEffect combines component lifecycle methods (componentDidMount, componentDidUpdate, and componentWillUnmount) into a single API, improving code organization.\n- **Code Organization and Reusability**: Hooks encourage better organization and allow for code reuse, particularly through custom hooks.\n- **Smaller Bundle Sizes**: Hooks can lead to smaller bundle sizes as they facilitate better dead code elimination compared to class components.",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_0",
+      "start_time": "2025-01-29T23:57:31.021303Z",
+      "end_time": "2025-01-29T23:57:34.059777Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 3.038474
+      },
+      "result": "The main benefits of React Hooks discussed in the video are:\n\n- **State Management**: useState allows managing state in functional components without needing to convert them into class components.\n- **Lifecycle Management**: useEffect combines component lifecycle methods (componentDidMount, componentDidUpdate, and componentWillUnmount) into a single API, improving code organization.\n- **Code Organization and Reusability**: Hooks encourage better organization and allow for code reuse, particularly through custom hooks.\n- **Smaller Bundle Sizes**: Hooks can lead to smaller bundle sizes as they facilitate better dead code elimination compared to class components.",
+      "message_format": "basic"
+    },
+    {
+      "node": "llm_get_starters",
+      "flow_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39",
+      "run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_llm_get_starters_0",
+      "status": "Completed",
+      "inputs": {
+        "deployment_name": "gpt-4o",
+        "input": [
+          {
+            "role": "system",
+            "content": "You are an AI assistant helping users understand a video.\n        Here is the context about the video:\n\n        Transcript:\n        Welcome to this tutorial on React Hooks. Today we'll explore how hooks revolutionize the way we write React components. Let's start with useState, which allows us to add state to functional components without converting them to class components. Here's a simple example [shows code]. As you can see, useState gives us a cleaner way to manage component state. Next, let's look at useEffect. This hook helps us handle side effects like data fetching and subscriptions. One major advantage is that useEffect combines componentDidMount, componentDidUpdate, and componentWillUnmount into a single API. This means we can organize related logic together, making our code more maintainable. Another benefit is that hooks encourage code reuse through custom hooks. Let me demonstrate [shows example of custom hook]. Finally, hooks lead to smaller bundle sizes because they allow better dead code elimination compared to classes.\n\n        Summary:\n        This video is a detailed tutorial explaining React Hooks, specifically useState and useEffect. It covers the benefits of hooks over class components, demonstrates practical examples, and discusses how hooks improve code organization and reusability. The instructor shows live coding examples and explains the concept of custom hooks.\n\n        Key Insights:\n        Key points from the video:\\n- useState allows state management in functional components\\n- useEffect combines lifecycle methods into a single API\\n- Hooks enable better code organization and reusability\\n- Custom hooks allow sharing stateful logic\\n- Hooks can lead to smaller bundle sizes\\n- The video includes practical coding examples\\n- The focus is on useState and useEffect hooks\n\n        Answer questions based on this context. If asked about something not covered in the video, politely explain that you can only answer questions about the video's content."
+          },
+          {
+            "role": "user",
+            "content": "Can you summarize what this video is about?"
+          },
+          {
+            "role": "assistant",
+            "content": "The video is a comprehensive tutorial about React Hooks, focusing on useState and useEffect. The instructor explains how hooks simplify state management and side effects in functional components."
+          },
+          {
+            "role": "user",
+            "content": "What are the main benefits of React hooks?"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "output": "{\n    \"conversation_starter_questions\": [\n        \"Can you explain how useState works with functional components?\",\n        \"How does useEffect combine lifecycle methods into a single API?\",\n        \"What are custom hooks and how do they promote code reuse?\"\n    ]\n}",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "337f6302-877b-4383-af9b-9a0f42dfac39_0",
+      "start_time": "2025-01-29T23:57:31.026259Z",
+      "end_time": "2025-01-29T23:57:32.738088Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 1.711829
+      },
+      "result": "{\n    \"conversation_starter_questions\": [\n        \"Can you explain how useState works with functional components?\",\n        \"How does useEffect combine lifecycle methods into a single API?\",\n        \"What are custom hooks and how do they promote code reuse?\"\n    ]\n}",
+      "message_format": "basic"
+    }
+  ]
+}

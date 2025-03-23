@@ -1,0 +1,19 @@
+{
+  "nodes": {
+    "llm_chat": {
+      "variant_0": {
+        "inputs": {
+          "messages": []
+        }
+      }
+    },
+    "llm_get_starters": {
+      "variant_0": {
+        "inputs": {
+          "input": [],
+          "response_format": []
+        }
+      }
+    }
+  }
+}

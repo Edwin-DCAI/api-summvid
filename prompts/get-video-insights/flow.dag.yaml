@@ -1,0 +1,72 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+environment_variables:
+  PF_DISABLE_TRACING: true
+inputs:
+  youtube_id:
+    type: string
+    default: HwzHhnEynP8
+outputs:
+  transcript:
+    type: string
+    reference: ${py_get_transcript.output}
+  summary:
+    type: string
+    reference: ${llm_get_summary.output}
+  insights:
+    type: string
+    reference: ${llm_get_insights.output}
+  starters:
+    type: string
+    reference: ${llm_get_starters.output}
+  metadata:
+    type: string
+    reference: ${py_get_metadata.output}
+nodes:
+- name: py_get_transcript
+  type: python
+  source:
+    type: code
+    path: get_youtube_transcript.py
+  inputs:
+    youtube_id: ${inputs.youtube_id}
+- name: llm_get_summary
+  type: llm
+  source:
+    type: code
+    path: llm_get_summary.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    input: ${py_get_transcript.output}
+  connection: dcai-aoai-connection
+  api: chat
+- name: llm_get_insights
+  type: llm
+  source:
+    type: code
+    path: llm_get_insights.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    input: ${py_get_transcript.output}
+  connection: dcai-aoai-connection
+  api: chat
+- name: llm_get_starters
+  type: llm
+  source:
+    type: code
+    path: llm_get_starters.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    input: ${py_get_transcript.output}
+    response_format:
+      type: json_object
+  connection: dcai-aoai-connection
+  api: chat
+- name: py_get_metadata
+  type: python
+  source:
+    type: code
+    path: py_get_metadata.py
+  inputs:
+    youtube_id: ${inputs.youtube_id}

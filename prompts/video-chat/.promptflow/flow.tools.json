@@ -1,0 +1,127 @@
+{
+  "package": {
+    "promptflow.tools.embedding.embedding": {
+      "name": "Embedding",
+      "description": "Use Open AI's embedding model to create an embedding vector representing the input text.",
+      "type": "python",
+      "module": "promptflow.tools.embedding",
+      "function": "embedding",
+      "inputs": {
+        "connection": {
+          "type": [
+            "AzureOpenAIConnection",
+            "OpenAIConnection"
+          ]
+        },
+        "deployment_name": {
+          "type": [
+            "string"
+          ],
+          "enabled_by": "connection",
+          "enabled_by_type": [
+            "AzureOpenAIConnection"
+          ],
+          "capabilities": {
+            "completion": false,
+            "chat_completion": false,
+            "embeddings": true
+          },
+          "model_list": [
+            "text-embedding-ada-002",
+            "text-search-ada-doc-001",
+            "text-search-ada-query-001"
+          ]
+        },
+        "model": {
+          "type": [
+            "string"
+          ],
+          "enabled_by": "connection",
+          "enabled_by_type": [
+            "OpenAIConnection"
+          ],
+          "enum": [
+            "text-embedding-ada-002",
+            "text-search-ada-doc-001",
+            "text-search-ada-query-001"
+          ],
+          "allow_manual_entry": true
+        },
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "package": "promptflow-tools",
+      "package_version": "1.4.0"
+    }
+  },
+  "code": {
+    "create_prompt.py": {
+      "type": "python",
+      "inputs": {
+        "user_message": {
+          "type": [
+            "string"
+          ]
+        },
+        "conversation_history": {
+          "type": [
+            "list"
+          ]
+        },
+        "transcript": {
+          "type": [
+            "string"
+          ]
+        },
+        "summary": {
+          "type": [
+            "string"
+          ]
+        },
+        "insights": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "create_prompt.py",
+      "function": "create_prompt"
+    },
+    "chat_with_context2.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "chat_with_context2.jinja2"
+    },
+    "llm_chat.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "messages": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "llm_chat.jinja2"
+    },
+    "llm_get_starters.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "llm_get_starters.jinja2"
+    }
+  }
+}

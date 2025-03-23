@@ -1,0 +1,14 @@
+{
+  "chat_list": [],
+  "prompty_chat_list": [
+    {
+      "name": "chat.prompty",
+      "inputs": {
+        "question": "Who is Smokey Robinson?"
+      }
+    }
+  ],
+  "init": {
+    "chat.prompty": {}
+  }
+}
